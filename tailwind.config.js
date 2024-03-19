@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       "bcr-blue": "#0D28A6",
       "bcr-lighterblue": "#F1F3FF",
+      "bcr-slighterlightblue":"#CFD4ED",
       "bcr-limegreen": "#5CB85F",
     },
     width: {
