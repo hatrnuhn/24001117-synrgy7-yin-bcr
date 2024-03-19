@@ -63,7 +63,7 @@
     } */
 
     .hero__text-container {
-        height: 69.711%;
+        
     }
 
     .hero__text {
@@ -82,7 +82,8 @@
     }
 
     .hero__img-container {
-        height: 30.289%;
+        /* height: 30.289%; */
+        height: 199px;
     }
 
     .hero__img-bg {
