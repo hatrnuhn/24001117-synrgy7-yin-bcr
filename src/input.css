@@ -154,6 +154,21 @@
         width: 100vw;
     }
 
+    .services__content  {
+        height: 100%;
+        width: 100%;
+    }
+
+    @media (min-width: 640px) {
+        .services {
+            height: 628px;
+        }
+        
+        .services__content {
+            width: 71.3194%;
+        }
+    }
+
     .services__img-container {
         height: 312px;
     }
@@ -169,8 +184,23 @@
         max-height: 228px;
     }
 
+    @media (min-width: 640px) {
+        .services__img {
+            width: 31.875vw;
+            height: 29.722vw;
+            max-height: 428px;
+            max-width: 459px;
+        }
+    }
+
     .services__text-container {
         height: 388px;
+    }
+
+    @media (min-width: 640px) {
+        .services__text-container {
+            margin-left: 6.9444vw;
+        }    
     }
 
     .services__text-container h1 {
