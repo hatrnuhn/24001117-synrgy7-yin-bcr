@@ -546,7 +546,7 @@ video {
 
 .box {
   min-height: 1rem;
-  border: 1px solid blue;
+  border: 1px solid red;
   font-size: 1rem;
   background-color: lightblue;
 }
@@ -556,26 +556,38 @@ video {
   width: 100vw;
 }
 
+@media (min-width:640px) {
+  .hero {
+    height: 500px;
+  }
+}
+
 .hero__nav {
   height: 90px;
 }
 
-/* @media (min-width: 640px) {
-        .hero__nav {
-            height: 97px;
-        }
-    } */
+@media (min-width: 640px) {
+  .hero__menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    width: 37.671%;
+    gap: 8.181%;
+  }
+
+  .hero__menu-list a {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-wrap: nowrap;
+  }
+}
 
 .hero__nav-container {
   width: 91.111%;
 }
-
-/* @media (min-width: 640px) {
-        .hero__nav-container {
-            width: 81.111%;
-            max-width: 1168px;
-        }
-    } */
 
 .hero__nav-menu-icon {
   -webkit-mask: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 18H21' stroke='%23222222' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 12H21' stroke='%23222222' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 6H21' stroke='%23222222' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -592,16 +604,16 @@ video {
   width: 1.5rem;
 }
 
-/* @media (min-width: 640px) {
-        .hero__content {
-            max-width: 1168px;
-        }
-    } */
-
 .hero__text-container {
 }
 
 .hero__text {
+}
+
+@media (min-width: 640px) {
+  .hero__text {
+    padding-left: 18.888%;
+  }
 }
 
 .hero__text-container h1 {
@@ -629,12 +641,11 @@ video {
   left: 1rem;
 }
 
-/* @media (min-width: 640px) {
-        .hero__img-bg {
-            height: 48.6%;
-            width: 100vw;
-        }
-    } */
+@media (min-width: 640px) {
+  .hero__img-bg {
+    height: 243px;
+  }
+}
 
 .hero__img-png {
   background-image: url(images/kar.png);
@@ -646,14 +657,14 @@ video {
   transform: scaleX(-1);
 }
 
-/* @media (min-width: 640px) {
-        .hero__img-png {
-            height: 28.263vw;
-            width: 48.888vw;
-            max-height: 407px;
-            max-width: 704px;
-        }
-    } */
+@media (min-width: 640px) {
+  .hero__img-png {
+    height: 28.263vw;
+    width: 48.888vw;
+    max-height: 407px;
+    max-width: 704px;
+  }
+}
 
 .button {
   background-color: limegreen;
@@ -686,6 +697,14 @@ video {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-91prcnt {
@@ -744,6 +763,10 @@ video {
   overflow-x: clip;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .border {
   border-width: 1px;
 }
@@ -767,4 +790,42 @@ video {
 
 * {
   font-family: Helvetica, sans-serif;
+}
+
+@media (min-width: 640px) {
+  .sm\:box-border {
+    box-sizing: border-box;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:h-full {
+    height: 100%;
+  }
+
+  .sm\:w-81prcnt {
+    width: 81.111%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:w-half {
+    width: 50%;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
 }

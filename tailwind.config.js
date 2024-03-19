@@ -12,6 +12,8 @@ module.exports = {
       "81prcnt": "81.111%",
       "screen": "100vw",
       "full": "100%",
+      "half":"50%",
+      "auto":"auto",
     },
     extend: {},
   },
