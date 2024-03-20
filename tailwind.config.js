@@ -7,6 +7,11 @@ module.exports = {
       "bcr-lighterblue": "#F1F3FF",
       "bcr-slighterlightblue":"#CFD4ED",
       "bcr-limegreen": "#5CB85F",
+      "bcr-danger":"#FA2C5A",
+      "bcr-warning":"#F9CC00",
+      "bcr-success":"#73CA5C",
+      "bcr-neutral02":"#D0D0D0",
+      "white":"#FFFFFF",
     },
     width: {
       "91prcnt": "91.111%",
