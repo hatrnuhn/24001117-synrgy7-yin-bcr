@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <section class="hero box-border bg-bcr-lighterblue flex flex-col gap-2.5">
-        <div class="hero__nav w-full flex justify-center">
-            <div class="hero__nav-container relative top-6 flex justify-between sm:w-81prcnt">
+    <section class="hero box-border bg-bcr-lighterblue flex flex-col justify-between overflow-x-clip">
+        <div class="hero__nav w-full flex justify-center items-end">
+            <div class="hero__nav-container flex items-center justify-between sm:w-81prcnt">
                 <div class="bcr-logo bg-bcr-blue"></div>
                 <ul class="hero__menu-list hidden justify-end items-center sm:flex">
                     <li class="">
@@ -33,20 +33,20 @@
                 <button class="hero__nav-menu-icon sm:hidden" type="button"></button>
             </div>
         </div>
-        <div class="hero__content flex flex-col h-full items-center justify-end gap-2.5 sm:flex-row">
-            <div class="hero__text-container w-full flex flex-col justify-end items-center gap-4 sm:w-half sm:h-full sm:justify-center">
-                <h1 class="hero__text w-91prcnt sm:w-full sm:box-border">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
-                <p class="hero__text w-91prcnt sm:w-full sm:box-border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic architecto nostrum consequatur! Dicta error ipsam perferendis quos hic nostrum?</p>    
-                <div class="hero__text w-91prcnt sm:w-full sm:box-border">
-                    <button class="button bg-bcr-limegreen self-start" type="button">Mulai Sewa Mobil</button>
-                </div>    
-            </div>
-            <div class="hero__img-container w-full flex justify-center overflow-x-clip sm:w-half sm:h-full">
-                <div class="hero__img-bg bg-bcr-blue self-end flex justify-center">
-                    <div class="hero__img-png self-end"></div>
-                </div>
-            </div>    
+        <div class="hero__text-container flex flex-col w-91prcnt self-center mt-8 gap-4">
+            <h1 class="hero__text w-full flex items-center">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+            <p class="hero__text w-full flex items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic architecto nostrum consequatur! Dicta error ipsam perferendis quos hic nostrum?</p>    
         </div>
+
+        <div class="hero__text w-91prcnt mt-4 self-center">
+            <button class="button bg-bcr-limegreen self-start" type="button">Mulai Sewa Mobil</button>
+        </div>    
+
+        <div class="hero__img-container w-full mt-6 ms-4 flex justify-center">
+            <div class="hero__img-bg bg-bcr-blue flex self-end justify-center">
+                <div class="hero__img-png self-end"></div>
+            </div>
+        </div>    
     </section>
 
     <section class="services box-border flex justify-center items-center">
@@ -132,6 +132,19 @@
                     <h1>Sopir Profesional</h1>
                     <p>Dan tentunya berpengalaman, jujur, ramah, selalu tepat waktu, dan keren.😎</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testy box-border flex justify-center items-center box">
+        <div class="testy__content flex flex-col gap-4 box">
+            <h1 class="flex justify-center box">What Do They Say?</h1>
+            <p class="flex justify-center text-center box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate id corrupti fugiat accusamus?</p>
+            <div class="testy__review-container box">
+            </div>
+            <div class="testy__carousel-btn-container self-center box">
+                <div class="splide__arrows"></div>
+
             </div>
         </div>
     </section>

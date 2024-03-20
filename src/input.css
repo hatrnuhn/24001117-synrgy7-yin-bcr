@@ -27,7 +27,7 @@
     }
 
     .hero__nav {
-        height: 90px;
+        height: 58px;
     }
 
     @media (min-width: 640px) {
@@ -52,6 +52,7 @@
 
     .hero__nav-container {
         width: 91.111%;
+        height: 34px;
     }
 
     .hero__nav-menu-icon {
@@ -69,7 +70,7 @@
     }
 
     .hero__text-container {
-
+        height: 292px;
     }
 
     .hero__text {
@@ -82,19 +83,22 @@
     }
 
     .hero__text-container h1 {
-        font-size: 2.25rem;
-        line-height: 3.375rem;
+        font-size: 36px;
         font-weight: 700;
+        line-height: 54px;
+        text-align: left;
+        height: 216px;
     }
 
     .hero__text-container p {
-        font-size: 0.875rem;
-        line-height: 1.25rem;
+        font-size: 14px;
         font-weight: 300;
+        line-height: 20px;
+        text-align: left;
+        height: 60px;
     }
 
     .hero__img-container {
-        /* height: 30.289%; */
         height: 199px;
     }
 
@@ -103,7 +107,6 @@
         width: 100%;
         border-top-left-radius: 3.75rem;
         position: relative;
-        left: 1rem;
     }
 
     @media (min-width: 640px) {
@@ -133,12 +136,14 @@
 
     .button {
         background-color: limegreen;
-        font-size: 0.875rem;
+        font-size: 14px;
         font-weight: 700;
-        line-height: 1.25rem;
-        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        line-height: 20px;
+        text-align: left;
+        padding: 8px 12px 8px 12px;
+        gap: 10px;
         color: white;
-        border-radius: 0.125rem;
+        border-radius: 2px;
         height: 36px;
     }
 
@@ -369,5 +374,39 @@
         .why__items {
             gap: 1rem;
         }
+    }
+    /* end of why us */
+
+    /* testy */
+    .testy {
+        height: 648px;
+        width: 100vw;
+    }
+
+    .testy__content {
+        height: 528px;
+        width: 91.1111%;
+    }
+
+    .testy__content h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .testy__content p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    .testy__review-container {
+        height: 372px;
+        width: 100%;
+    }
+
+    .testy__carousel-btn-container {
+        height: 32px;
+        width: 26.8293%;
     }
 }
