@@ -710,7 +710,7 @@ video {
 /* services section */
 
 .services {
-  height: 700px;
+  min-height: 700px;
   width: 100vw;
 }
 
@@ -737,7 +737,7 @@ video {
 }
 
 .services__text-container {
-  height: 388px;
+  min-height: 388px;
 }
 
 .services__text-container h1 {
