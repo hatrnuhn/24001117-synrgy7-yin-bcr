@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -1058,6 +1058,21 @@ video {
   text-align: center;
 }
 
+@media (min-width: 640px) {
+  .cta {
+    height: 426px;
+  }
+
+  .cta__content {
+    height: 326px;
+    padding: 64px 0px;
+  }
+
+  .cta__content p {
+    width: 40%;
+  }
+}
+
 .ms-4 {
   margin-inline-start: 1rem;
 }
@@ -1160,6 +1175,10 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-1 {
@@ -1294,6 +1313,10 @@ video {
 
   .sm\:gap-0 {
     gap: 0px;
+  }
+
+  .sm\:gap-13 {
+    gap: 52px;
   }
 }
 

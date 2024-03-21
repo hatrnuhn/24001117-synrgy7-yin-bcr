@@ -519,4 +519,18 @@
         text-align: center;
     }
 
+    @media (min-width: 640px) {
+        .cta {
+            height: 426px;
+        }
+
+        .cta__content {
+            height: 326px;
+            padding: 64px 0px;
+        }
+
+        .cta__content p {
+            width: 40%;
+        }
+    }
 }
