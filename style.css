@@ -1029,6 +1029,35 @@ video {
   }
 }
 
+/* end of testy */
+
+/* cta */
+
+.cta {
+  height: 460px;
+  width: 100vw;
+}
+
+.cta__content {
+  height: 400px;
+  border-radius: 13px;
+  padding: 64px 17.6829%;
+}
+
+.cta__content h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+
+.cta__content p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+}
+
 .ms-4 {
   margin-inline-start: 1rem;
 }
@@ -1099,6 +1128,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .self-start {
@@ -1191,6 +1224,11 @@ video {
   text-align: center;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 /* npx tailwindcss -i ./src/input.css -o style.css --watch */
 
 * {
@@ -1252,10 +1290,6 @@ video {
 
   .sm\:items-end {
     align-items: flex-end;
-  }
-
-  .sm\:justify-between {
-    justify-content: space-between;
   }
 
   .sm\:gap-0 {
