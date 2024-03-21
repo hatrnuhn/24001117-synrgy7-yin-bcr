@@ -552,7 +552,7 @@ video {
 }
 
 .hero {
-  height: 657px;
+  min-height: 657px;
   width: 100vw;
 }
 
@@ -580,7 +580,7 @@ video {
 }
 
 .hero__text-container {
-  height: 292px;
+  min-height: 292px;
 }
 
 .hero__text {
@@ -591,7 +591,7 @@ video {
   font-weight: 700;
   line-height: 54px;
   text-align: left;
-  height: 216px;
+  min-height: 216px;
 }
 
 .hero__text-container p {
@@ -599,7 +599,7 @@ video {
   font-weight: 300;
   line-height: 20px;
   text-align: left;
-  height: 60px;
+  min-height: 60px;
 }
 
 .hero__img-container {
@@ -646,6 +646,7 @@ video {
   .hero {
     height: 500px;
     width: 100vw;
+    min-height: 0px;
   }
 
   .hero__nav {
@@ -676,8 +677,8 @@ video {
   }
 
   .hero__img-container {
-    margin-top: 60px;
-    height: 444px;
+    margin-top: 97px;
+    height: 407px;
   }
 
   .hero__img-bg {
@@ -694,14 +695,17 @@ video {
   }
 
   .hero__text-container {
+    min-height: 0px;
     height: auto;
   }
 
   .hero__text-container h1 {
+    min-height: 0px;
     height: auto;
   }
 
   .hero__text-container p {
+    min-height: 0px;
     height: auto;
     width: 82.3943%;
   }
@@ -1305,10 +1309,6 @@ video {
 @media (min-width: 640px) {
   .sm\:absolute {
     position: absolute;
-  }
-
-  .sm\:ms-0 {
-    margin-inline-start: 0px;
   }
 
   .sm\:mt-0 {
