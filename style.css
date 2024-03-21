@@ -1073,8 +1073,48 @@ video {
   }
 }
 
+/* end of cta  */
+
+/* faq */
+
+.faq {
+  min-height: 532px;
+  width: 100vw;
+}
+
+.faq__content {
+  min-height: 472px;
+}
+
+.faq__head h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+
+.faq__content p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+}
+
+.faq__accordion {
+  min-height: 376px;
+}
+
+.faq__accordion > p {
+  padding: 16px 24px;
+  border-color: #d4d4d4;
+}
+
 .ms-4 {
   margin-inline-start: 1rem;
+}
+
+.mt-25 {
+  margin-top: 100px;
 }
 
 .mt-4 {
@@ -1125,6 +1165,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -1167,6 +1211,10 @@ video {
 
 .text-wrap {
   text-wrap: wrap;
+}
+
+.rounded-4px {
+  border-radius: 4px;
 }
 
 .rounded-full {

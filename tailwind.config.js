@@ -26,9 +26,16 @@ module.exports = {
       borderWidth: {
         "1":"1px",
       },
+      margin: {
+        "15":"60px",
+        "25":"100px",
+      },
       gap: {
         "13":"52px",
       },  
+      borderRadius: {
+        "4px":"4px",
+      },
     },
   },
   plugins: [],

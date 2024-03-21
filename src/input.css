@@ -533,4 +533,41 @@
             width: 40%;
         }
     }
+    /* end of cta  */
+
+
+    /* faq */
+    .faq {
+        min-height: 532px;
+        width: 100vw;
+    }
+
+    .faq__content {
+        min-height: 472px;
+    }
+
+    .faq__head h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .faq__content p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .faq__accordion {
+        min-height: 376px;
+    }
+
+    .faq__accordion > p {
+        padding: 16px 24px;
+        border-color: #d4d4d4;
+    }
+
+
 }
