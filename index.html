@@ -139,15 +139,19 @@
         </div>
     </section>
 
-    <section class="testy box-border flex justify-center items-center">
+    <section class="testy box-border flex justify-center">
         <div class="testy__content flex flex-col gap-4">
             <h1 class="flex justify-center">What Do They Say?</h1>
             <p class="flex justify-center text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate id corrupti fugiat accusamus?</p>
-            <div class="testy__review-container">
+            <div class="testy__review-container box">
             </div>
-            <div class="testy__carousel-btn-container self-center">
-                <div class="splide__arrows"></div>
-
+            <div class="testy__carousel-btn-container self-center flex justify-between">
+                <button class="testy__carousel-btn flex justify-center items-center rounded-full border-1 border-bcr-dark" type="button">
+                    <div class="svg prev-icon bg-bcr-dark"></div>
+                </button>
+                <button class="testy__carousel-btn flex justify-center items-center bg-bcr-limegreen rounded-full" type="button">
+                    <div class="svg next-icon bg-white"></div>
+                </button>
             </div>
         </div>
     </section>

@@ -12,6 +12,7 @@ module.exports = {
       "bcr-success":"#73CA5C",
       "bcr-neutral02":"#D0D0D0",
       "white":"#FFFFFF",
+      "bcr-dark":"#222222",
     },
     width: {
       "91prcnt": "91.111%",
@@ -20,6 +21,9 @@ module.exports = {
       "full": "100%",
       "half":"50%",
       "auto":"auto",
+    },
+    borderWidth: {
+      "1":"1px",
     },
     extend: {},
   },

@@ -422,11 +422,12 @@
 
     /* testy */
     .testy {
-        height: 648px;
+        height: 588px;
         width: 100vw;
     }
 
     .testy__content {
+        margin-top: 60px;
         height: 528px;
         width: 91.1111%;
     }
@@ -452,4 +453,21 @@
         height: 32px;
         width: 26.8293%;
     }
+
+    .testy__carousel-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .next-icon, .prev-icon {
+        -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 11L6.5 6L1.5 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        mask-image: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 11L6.5 6L1.5 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        height: 10px;
+        width: 5px;
+    }
+
+    .prev-icon {
+        transform: scaleX(-1);
+    }
+
 }
