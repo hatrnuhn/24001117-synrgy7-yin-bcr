@@ -470,4 +470,24 @@
         transform: scaleX(-1);
     }
 
+    @media (min-width: 640px) {
+        .testy {
+            height: 538px;
+        }
+
+        .testy__content {
+            margin-top: 100px;
+            height: 438px;
+            width: 100%;
+        }
+
+        .testy__review-container {
+            height: 270px;
+        }
+
+        .testy__carousel-btn-container {
+            width: 6.11111%;
+            min-width: 88px;
+        }
+    }
 }
