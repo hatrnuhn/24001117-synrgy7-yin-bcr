@@ -183,18 +183,10 @@
         width: 100%;
     }
 
-    @media (min-width: 640px) {
-        .services {
-            height: 628px;
-        }
-        
-        .services__content {
-            width: 71.3194%;
-        }
-    }
-
     .services__img-container {
-        height: 312px;
+        margin-top: 16.6666vw;
+        height: 228px;
+        width: 100%;
     }
 
     .services__img {
@@ -208,23 +200,8 @@
         max-height: 228px;
     }
 
-    @media (min-width: 640px) {
-        .services__img {
-            width: 31.875vw;
-            height: 29.722vw;
-            max-height: 428px;
-            max-width: 459px;
-        }
-    }
-
     .services__text-container {
         height: 388px;
-    }
-
-    @media (min-width: 640px) {
-        .services__text-container {
-            margin-left: 6.9444vw;
-        }    
     }
 
     .services__text-container h1 {
@@ -259,6 +236,32 @@
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
     }
+
+    @media (min-width: 1024px) {
+        .services__content {
+            margin-top: 100px;
+            height: 428px;
+            width: 71.31944%;
+        }
+
+        .services__img-container {
+            margin-top: 0;
+            height: 100%;
+            width: 44.693281%;
+        }
+        
+        .services__img {
+            width: 31.875vw;
+            height: 29.722vw;
+            max-height: 428px;
+            max-width: 459px;
+        }
+
+        .services__text-container {
+            margin-left: 9.737%;
+        } 
+    }
+
     /* end of services */
 
     /* why section */
