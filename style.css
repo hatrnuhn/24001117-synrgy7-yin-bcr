@@ -774,6 +774,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .services {
+    height: 528px;
+  }
+
   .services__content {
     margin-top: 100px;
     height: 428px;
@@ -890,7 +894,7 @@ video {
 
 @media (min-width: 640px) {
   .why {
-    height: 508px;
+    height: 408px;
   }
 
   .why__content {
@@ -916,6 +920,23 @@ video {
   .why__items p {
     font-size: 1.1375vw;
   }
+
+  .why__icon {
+    width: 2.2222vw;
+    height: 2.2222vw;
+    max-width: 32px;
+    max-height: 32px;
+  }
+
+  .thumb-icon,
+        .tag-icon,
+        .clock-icon,
+        .medal-icon {
+    width: 1.3888vw;
+    height: 1.3888vw;
+    max-width: 20px;
+    max-height: 20px;
+  }
 }
 
 @media (min-width: 1230px) {
@@ -930,7 +951,7 @@ video {
 
 @media (min-width: 1440px) {
   .why__items {
-    gap: 1rem;
+    gap: 16px;
   }
 }
 
@@ -1169,8 +1190,8 @@ video {
     align-items: flex-start;
   }
 
-  .sm\:items-center {
-    align-items: center;
+  .sm\:items-end {
+    align-items: flex-end;
   }
 }
 
