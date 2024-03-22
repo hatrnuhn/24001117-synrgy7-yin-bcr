@@ -8,17 +8,20 @@
     font-family: Helvetica, sans-serif;
 }
 
+@layer base {
+    body {
+        margin: 0;
+        padding: 0;
+        @apply flex flex-col gap-15 sm:gap-25;
+    }
+}
+
 @layer components {
     .box {
         min-height: 1rem;
         border: 1px solid red;
         font-size: 1rem;
         background-color: lightblue;
-    }
-
-    .hero {
-        min-height: 657px;
-        width: 100vw;
     }
 
     .hero__nav {
@@ -43,19 +46,11 @@
         width: 1.5rem;
     }
 
-    .hero__text-container {
-        min-height: 292px;
-    }
-
-    .hero__text {
-    }
-
     .hero__text-container h1 {
         font-size: 36px;
         font-weight: 700;
         line-height: 54px;
         text-align: left;
-        min-height: 216px;
     }
 
     .hero__text-container p {
@@ -63,12 +58,11 @@
         font-weight: 300;
         line-height: 20px;
         text-align: left;
-        min-height: 60px;
     }
 
     .hero__img-container {
         height: 199px;
-        margin-top: 24px;
+        margin-left: 4.44444%;
     }
 
     .hero__img-bg {
@@ -81,7 +75,7 @@
         background-image: url(images/kar.png);
         background-position: bottom;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         height: 199px;
         width: 344.22px;
         transform: scaleX(-1);
@@ -97,7 +91,6 @@
         gap: 10px;
         color: white;
         border-radius: 2px;
-        height: 36px;
     }
 
     .bcr-logo {
@@ -107,12 +100,6 @@
     }
 
     @media (min-width: 640px) {
-        .hero {
-            height: 500px;
-            width: 100vw;
-            min-height: 0px;
-        }
-
         .hero__nav {
             height: 60px;
         }
@@ -137,11 +124,9 @@
         .hero__content {
             width: 39.4444%;
             margin-left: 9.4444%;
-            margin-top: 60px;
         }
 
         .hero__img-container {
-            margin-top: 97px;
             height: 407px;
         }
 
@@ -157,21 +142,13 @@
             max-height: 407px;
             max-width: 704px;
         }
-
-        .hero__text-container {
-            min-height: 0px;
-            height: auto;
-        }
-
-        .hero__text-container h1 {
-            min-height: 0px;
-            height: auto;
-        }
         
         .hero__text-container p {
-            min-height: 0px;
-            height: auto;
             width: 82.3943%;
+        }
+
+        .hero__content .button {
+            margin-bottom: 17.4%;
         }
     
     }
@@ -557,21 +534,56 @@
         text-align: center;
     }
 
-    .faq__content p {
+    .faq__content p,
+    .accordion {
         font-size: 14px;
         font-weight: 300;
         line-height: 20px;
+    }
+
+    .faq__head > p {
         text-align: center;
     }
 
-    .faq__accordion {
-        min-height: 376px;
-    }
-
-    .faq__accordion > p {
-        padding: 16px 24px;
+    /* credit to: https://www.w3schools.com/howto/howto_js_accordion.asp */
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
         border-color: #d4d4d4;
+        cursor: pointer;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+        height: 56px;
+    }
+  
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+  
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+    
+    .accordion:after {
+        content: '\2304'; /* Unicode character for "plus" sign (+) */
+        font-size: 1.5rem;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+      
+    .active:after {
+    content: "\2303"; /* Unicode character for "minus" sign (-) */
     }
 
-
+    @media (min-height:640px) {
+        .faq__content {
+        }
+    }
 }

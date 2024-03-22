@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <section class="hero box-border bg-bcr-lighterblue flex flex-col justify-between overflow-x-clip sm:flex-row">
+    <section class="hero w-full box-border bg-bcr-lighterblue flex flex-col justify-between overflow-x-clip sm:flex-row">
         <div class="hero__nav w-full flex justify-center items-end sm:absolute">
             <div class="hero__nav-container flex items-center justify-between w-91prcnt sm:w-81prcnt">
                 <div class="bcr-logo bg-bcr-blue"></div>
@@ -33,19 +33,19 @@
                 <button class="hero__nav-menu-icon sm:hidden" type="button"></button>
             </div>
         </div>
-        <div class="hero__content flex flex-col justify-center">
-            <div class="hero__text-container flex flex-col w-91prcnt self-center mt-8 gap-4 sm:w-full sm:mt-0">
-                <h1 class="hero__text w-full flex items-center sm:w-full">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
-                <p class="hero__text w-full flex items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic architecto nostrum consequatur! Dicta error ipsam perferendis quos hic nostrum?</p>    
+        <div class="hero__content flex flex-col justify-center items-center gap-4 mt-8 sm:items-start sm:justify-end sm:mt-24">
+            <div class="hero__text-container flex flex-col w-91prcnt gap-4">
+                <h1 class="w-full flex items-center sm:w-full">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+                <p class="w-full flex items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic architecto nostrum consequatur! Dicta error ipsam perferendis quos hic nostrum?</p>    
             </div>
     
-            <div class="hero__text w-91prcnt mt-4 self-center sm:w-full">
+            <div class="w-91prcnt sm:w-full">
                 <button class="button bg-bcr-limegreen self-start" type="button">Mulai Sewa Mobil</button>
             </div>    
         </div>
 
 
-        <div class="hero__img-container w-full ms-4 flex justify-center items-end sm:w-half">
+        <div class="hero__img-container mt-6 flex justify-center items-end sm:w-half sm:mt-24 sm:self-end">
             <div class="hero__img-bg bg-bcr-blue flex justify-center">
                 <div class="hero__img-png self-end"></div>
             </div>
@@ -166,20 +166,51 @@
         </div>
     </section>
 
-    <section class="faq box-border flex justify-center">
-        <div class="faq__content w-91prcnt mt-25 flex flex-col justify-start items-center gap-6">
-            <div class="faq__head w-full flex flex-col items-center gap-4">
+    <section class="faq box-border flex justify-center ">
+        <div class="faq__content w-91prcnt mt-15 flex flex-col justify-start items-center gap-6 sm:flex-row sm:gap-0 sm:mt-25 sm:w-81prcnt box">
+            <div class="faq__head w-full flex flex-col items-center gap-4 sm:self-start sm:items-start">
                 <h1>Frequently Asked Questions</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>    
             </div>
-            <div class="faq__accordion w-full flex flex-col justify-between gap-4">
-                <p class="border-1 rounded-4px">Apa saja syarat yang dibutuhkan?</p>
-                <p class="border-1 rounded-4px">Berapa hari minimal sewa mobil lepas kunci?</p>
-                <p class="border-1 rounded-4px">Berapa hari sebelumnya sebaiknya booking sewa mobil?</p>
-                <p class="border-1 rounded-4px">Apakah ada biaya antar-jemput?</p>
-                <p class="border-1 rounded-4px">Bagaimana jika terjadi kecelakaan?</p>
+            <div class="faq__accordion w-full flex flex-col justify-start gap-4 sm:self-start box">
+                <div>
+                    <button class="accordion w-full border-1 rounded-4px flex justify-between items-center px-6 py-4">Apa saja syarat yang dibutuhkan?</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, porro aut repudiandae nemo deserunt labore voluptatem molestias soluta magni quo.</p>
+                    </div>    
+                </div>
+
+                <div>
+                    <button class="accordion w-full border-1 rounded-4px flex justify-between items-center px-6 py-4">Berapa hari minimal sewa mobil lepas kunci?</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, porro aut repudiandae nemo deserunt labore voluptatem molestias soluta magni quo.</p>
+                    </div>    
+                </div>
+
+                <div>
+                    <button class="accordion w-full border-1 rounded-4px flex justify-between items-center px-6 py-4">Berapa hari sebelumnya sebaiknya booking sewa mobil?</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, porro aut repudiandae nemo deserunt labore voluptatem molestias soluta magni quo.</p>
+                    </div>    
+                </div>
+
+                <div>
+                    <button class="accordion w-full border-1 rounded-4px flex justify-between items-center px-6 py-4">Apakah ada biaya antar-jemput?</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, porro aut repudiandae nemo deserunt labore voluptatem molestias soluta magni quo.</p>
+                    </div>    
+                </div>
+
+                <div>
+                    <button class="accordion w-full border-1 rounded-4px flex justify-between items-center px-6 py-4">Bagaimana jika terjadi kecelakaan?</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, porro aut repudiandae nemo deserunt labore voluptatem molestias soluta magni quo.</p>
+                    </div>    
+                </div>
             </div>
         </div>
     </section>
+
+    <script src="scripts/accordion.js"></script>
   </body>
 </html>

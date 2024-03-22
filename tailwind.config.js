@@ -32,6 +32,8 @@ module.exports = {
       },
       gap: {
         "13":"52px",
+        "15":"60px",
+        "25":"100px",
       },  
       borderRadius: {
         "4px":"4px",

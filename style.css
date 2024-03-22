@@ -444,6 +444,20 @@ video {
   display: none;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+@media (min-width: 640px) {
+  body {
+    gap: 100px;
+  }
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -551,11 +565,6 @@ video {
   background-color: lightblue;
 }
 
-.hero {
-  min-height: 657px;
-  width: 100vw;
-}
-
 .hero__nav {
   height: 58px;
 }
@@ -579,19 +588,11 @@ video {
   width: 1.5rem;
 }
 
-.hero__text-container {
-  min-height: 292px;
-}
-
-.hero__text {
-}
-
 .hero__text-container h1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 54px;
   text-align: left;
-  min-height: 216px;
 }
 
 .hero__text-container p {
@@ -599,12 +600,11 @@ video {
   font-weight: 300;
   line-height: 20px;
   text-align: left;
-  min-height: 60px;
 }
 
 .hero__img-container {
   height: 199px;
-  margin-top: 24px;
+  margin-left: 4.44444%;
 }
 
 .hero__img-bg {
@@ -617,7 +617,7 @@ video {
   background-image: url(images/kar.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 199px;
   width: 344.22px;
   transform: scaleX(-1);
@@ -633,7 +633,6 @@ video {
   gap: 10px;
   color: white;
   border-radius: 2px;
-  height: 36px;
 }
 
 .bcr-logo {
@@ -643,12 +642,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .hero {
-    height: 500px;
-    width: 100vw;
-    min-height: 0px;
-  }
-
   .hero__nav {
     height: 60px;
   }
@@ -673,11 +666,9 @@ video {
   .hero__content {
     width: 39.4444%;
     margin-left: 9.4444%;
-    margin-top: 60px;
   }
 
   .hero__img-container {
-    margin-top: 97px;
     height: 407px;
   }
 
@@ -694,20 +685,12 @@ video {
     max-width: 704px;
   }
 
-  .hero__text-container {
-    min-height: 0px;
-    height: auto;
-  }
-
-  .hero__text-container h1 {
-    min-height: 0px;
-    height: auto;
-  }
-
   .hero__text-container p {
-    min-height: 0px;
-    height: auto;
     width: 82.3943%;
+  }
+
+  .hero__content .button {
+    margin-bottom: 17.4%;
   }
 }
 
@@ -1097,32 +1080,71 @@ video {
   text-align: center;
 }
 
-.faq__content p {
+.faq__content p,
+    .accordion {
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
+}
+
+.faq__head > p {
   text-align: center;
 }
 
-.faq__accordion {
-  min-height: 376px;
-}
+/* credit to: https://www.w3schools.com/howto/howto_js_accordion.asp */
 
-.faq__accordion > p {
-  padding: 16px 24px;
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
   border-color: #d4d4d4;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  height: 56px;
 }
 
-.ms-4 {
-  margin-inline-start: 1rem;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active, .accordion:hover {
+  background-color: #ccc;
 }
 
-.mt-25 {
-  margin-top: 100px;
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.accordion:after {
+  content: '\2304';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 1.5rem;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2303";
+  /* Unicode character for "minus" sign (-) */
+}
+
+@media (min-height:640px) {
+  .faq__content {
+  }
+}
+
+.mt-15 {
+  margin-top: 60px;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-8 {
@@ -1183,6 +1205,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-15 {
+  gap: 60px;
 }
 
 .gap-4 {
@@ -1291,6 +1317,16 @@ video {
   padding: 1.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1298,6 +1334,18 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 /* npx tailwindcss -i ./src/input.css -o style.css --watch */
@@ -1311,12 +1359,16 @@ video {
     position: absolute;
   }
 
-  .sm\:mt-0 {
-    margin-top: 0px;
-  }
-
   .sm\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .sm\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .sm\:mt-25 {
+    margin-top: 100px;
   }
 
   .sm\:mt-4 {
@@ -1359,12 +1411,24 @@ video {
     align-items: flex-end;
   }
 
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
   .sm\:gap-0 {
     gap: 0px;
   }
 
   .sm\:gap-13 {
     gap: 52px;
+  }
+
+  .sm\:self-start {
+    align-self: flex-start;
+  }
+
+  .sm\:self-end {
+    align-self: flex-end;
   }
 }
 
