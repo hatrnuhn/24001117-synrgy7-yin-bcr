@@ -14,6 +14,19 @@
         padding: 0;
         @apply flex flex-col gap-15 sm:gap-25;
     }
+
+    h1 {
+        @apply text-4xl font-bold leading-13;
+
+    }
+
+    h2 {
+        @apply text-2xl font-bold leading-9;
+    }
+
+    p {
+        @apply text-sm font-light leading-5;
+    }
 }
 
 @layer components {
@@ -44,20 +57,6 @@
         background-color: #222222;
         height: 1.5rem;
         width: 1.5rem;
-    }
-
-    .hero__text-container h1 {
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 54px;
-        text-align: left;
-    }
-
-    .hero__text-container p {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 20px;
-        text-align: left;
     }
 
     .hero__img-container {
@@ -154,22 +153,6 @@
     }
 
     /* services section */
-    .services {
-        min-height: 700px;
-        width: 100vw;
-    }
-
-    .services__content  {
-        height: 100%;
-        width: 100%;
-    }
-
-    .services__img-container {
-        margin-top: 16.6666vw;
-        height: 228px;
-        width: 100%;
-    }
-
     .services__img {
         background-image: url(images/gurl.png);
         background-position: center;
@@ -179,22 +162,6 @@
         height: 63.333vw;
         max-width: 252px;
         max-height: 228px;
-    }
-
-    .services__text-container {
-        min-height: 388px;
-    }
-
-    .services__text-container h1 {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 36px;
-    }
-
-    .services__text-container p li {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 20px;
     }
 
     .services__tick-container {
@@ -218,23 +185,7 @@
         mask-repeat: no-repeat;
     }
 
-    @media (min-width: 1024px) {
-        .services {
-            height: 528px;
-        }
-        
-        .services__content {
-            margin-top: 100px;
-            height: 428px;
-            width: 71.31944%;
-        }
-
-        .services__img-container {
-            margin-top: 0;
-            height: 100%;
-            width: 44.693281%;
-        }
-        
+    @media (min-width: 640px) {
         .services__img {
             width: 31.875vw;
             height: 29.722vw;
@@ -264,18 +215,6 @@
 
     .why__head {
         width:  100%;
-    }
-
-    .why__head h1 {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 36px;
-    }
-
-    .why__head p {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 20px;
     }
 
     .why__items-container {

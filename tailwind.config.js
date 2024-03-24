@@ -18,6 +18,7 @@ module.exports = {
       width: {
         "91prcnt": "91.111%",
         "81prcnt": "81.111%",
+        "71prcnt":"71.319444%",
         "screen": "100vw",
         "full": "100%",
         "half":"50%",
@@ -34,7 +35,10 @@ module.exports = {
         "13":"52px",
         "15":"60px",
         "25":"100px",
-      },  
+      },
+      lineHeight: {
+        "13":"52px",
+      }, 
       borderRadius: {
         "4px":"4px",
       },
