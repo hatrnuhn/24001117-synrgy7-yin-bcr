@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Binar Car Rental</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   </head>
   <body>
     <section class="hero w-full box-border bg-bcr-lighterblue flex flex-col justify-between overflow-x-clip sm:flex-row">
@@ -140,16 +141,78 @@
     </section>
 
     <section class="testy w-screen flex justify-center">
-        <div class="testy__content w-91prcnt flex flex-col gap-4 justify-between sm:gap-0 sm:w-full">
+        <div class="testy__content w-91prcnt flex flex-col gap-4 justify-between sm:gap-0 sm:w-full sm:items-center overflow-x-clip">
             <h2 class="flex justify-center">What Do They Say?</h2>
             <p class="flex justify-center text-center sm:mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, rem saepe.</p>
-            <div class="testy__review-container sm:mt-10">
+            <div class="testy__review-container sm:mt-10 sm:flex sm:justify-center sm:w-130vw">
+                <div class="my-slider flex">
+                    <div class="slider-item">
+                        <div class="flex flex-col gap-6 py-10 px-8 rounded-lg bg-bcr-lighterblue sm:flex-row sm:justify-center sm:gap-0">
+                            <div class="flex justify-center items-center w-full">
+                                <div class="joe-swanson-img testy__img rounded-full"></div>
+                            </div>
+                            <div class="flex flex-col gap-6 sm:gap-2">
+                                <div class="testy__stars flex justify-center sm:justify-start">
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--empty bg-bcr-warning"></div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ex laudantium exercitationem quos maxime repellat libero, facilis dicta est, excepturi laboriosam facere recusandae debitis delectus in expedita voluptates explicabo maiores ea natus? Reiciendis?</p>
+                                    <p class="font-semibold">Joe Swanson 40, Quahog</p>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="flex flex-col gap-6 py-10 px-8 rounded-lg bg-bcr-lighterblue sm:flex-row sm:justify-center sm:gap-0">
+                            <div class="flex justify-center items-center w-full">
+                                <div class="leslie-knope-img testy__img rounded-full"></div>
+                            </div>
+                            <div class="flex flex-col gap-6 sm:gap-2">
+                                <div class="testy__stars flex justify-center sm:justify-start">
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ex laudantium exercitationem quos maxime repellat libero, facilis dicta est, excepturi laboriosam facere recusandae debitis delectus in expedita voluptates explicabo maiores ea natus? Reiciendis?</p>
+                                    <p class="font-semibold">Leslie Knope 48, Pawnee</p>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="flex flex-col gap-6 py-10 px-8 rounded-lg bg-bcr-lighterblue sm:flex-row sm:justify-center sm:gap-0">
+                            <div class="flex justify-center items-center w-full">
+                                <div class="stanley-hudson-img testy__img rounded-full"></div>
+                            </div>
+                            <div class="flex flex-col gap-6 sm:gap-2">
+                                <div class="testy__stars flex justify-center sm:justify-start">
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--half bg-bcr-warning"></div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ex laudantium exercitationem quos maxime repellat libero, facilis dicta est, excepturi laboriosam facere recusandae debitis delectus in expedita voluptates explicabo maiores ea natus? Reiciendis?</p>
+                                    <p class="font-semibold">Stanley Hudson 72, Scranton</p>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="testy__carousel-btn-container self-center flex justify-between sm:mt-6">
-                <button class="testy__carousel-btn flex justify-center items-center rounded-full border-1 border-bcr-dark" type="button">
+                <button id="carousel-btn-prev" class="testy__carousel-btn flex justify-center items-center rounded-full border-1 border-bcr-dark" type="button">
                     <div class="svg prev-icon bg-bcr-dark"></div>
                 </button>
-                <button class="testy__carousel-btn flex justify-center items-center bg-bcr-limegreen rounded-full" type="button">
+                <button id="carousel-btn-next" class="testy__carousel-btn flex justify-center items-center bg-bcr-limegreen rounded-full" type="button">
                     <div class="svg next-icon bg-white"></div>
                 </button>
             </div>
@@ -263,5 +326,7 @@
         </div>
     </footer>
     <script src="scripts/accordion.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="scripts/carousel.js"></script>
   </body>
 </html>

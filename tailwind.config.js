@@ -19,10 +19,9 @@ module.exports = {
         "91prcnt": "91.111%",
         "81prcnt": "81.111%",
         "71prcnt":"71.319444%",
-        "screen": "100vw",
-        "full": "100%",
+        "67prcnt":"67%",
         "half":"50%",
-        "auto":"auto",
+        "130vw":"133.4vw",
       },
       borderWidth: {
         "1":"1px",
@@ -35,6 +34,10 @@ module.exports = {
         "13":"52px",
         "15":"60px",
         "25":"100px",
+      },
+      flexGrow: {
+        "2":"2",
+        "3":"3",
       },
       lineHeight: {
         "13":"52px",
