@@ -1,0 +1,22 @@
+{
+  "name": "bcr",
+  "description": "## what's this? a vehicle renting platform",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hatrnuhn/24001117-synrgy7-yin-bcr.git"
+  },
+  "author": "",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/hatrnuhn/24001117-synrgy7-yin-bcr/issues"
+  },
+  "homepage": "https://github.com/hatrnuhn/24001117-synrgy7-yin-bcr#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
