@@ -266,29 +266,6 @@
     /* end of why us */
 
     /* testy */
-    .testy {
-        height: 588px;
-        width: 100vw;
-    }
-
-    .testy__content {
-        margin-top: 60px;
-        height: 528px;
-        width: 91.1111%;
-    }
-
-    .testy__content h1 {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 36px;
-    }
-
-    .testy__content p {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 20px;
-    }
-
     .testy__review-container {
         height: 372px;
         width: 100%;
@@ -316,16 +293,6 @@
     }
 
     @media (min-width: 640px) {
-        .testy {
-            height: 538px;
-        }
-
-        .testy__content {
-            margin-top: 100px;
-            height: 438px;
-            width: 100%;
-        }
-
         .testy__review-container {
             height: 270px;
         }
