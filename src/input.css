@@ -306,41 +306,27 @@
     /* end of testy */
 
     /* cta */
-    .cta {
-        height: 460px;
-        width: 100vw;
-    }
-
     .cta__content {
-        height: 400px;
         border-radius: 13px;
         padding: 64px 17.6829%;
     }
 
-    .cta__content h1 {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 36px;
+    .cta__content h2 {
         text-align: center;
     }
 
     .cta__content p {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 20px;
         text-align: center;
     }
 
     @media (min-width: 640px) {
-        .cta {
-            height: 426px;
-        }
-
         .cta__content {
-            height: 326px;
             padding: 64px 0px;
         }
 
+        .cta__content h2 {
+            @apply text-4xl font-bold leading-13 m-0;
+        }
         .cta__content p {
             width: 40%;
         }
