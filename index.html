@@ -31,7 +31,32 @@
                         </a>
                     </li>
                 </ul>
-                <button class="hero__nav-menu-icon sm:hidden" type="button"></button>
+                <button class="hero__nav-menu-icon sm:hidden" type="button" onclick="openNav()"></button>
+                <div id="hero__side-nav" class="fixed top-0 right-0 h-full w-0 z-10 flex flex-col gap-4 items-center bg-white sm:hidden">
+                    <h2 class="flex w-3/4 justify-between items-center mt-8">
+                        BCR
+                        <a href="javascript:void(0)" class="closebtn text-4xl" onclick="closeNav()">&times;</a>
+                    </h2>
+                    <ul class="flex w-3/4 flex-col gap-4">
+                        <li>
+                            <a href="#">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Why Us?</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button class="button bg-bcr-limegreen self-start" type="button">Register</button>
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
             </div>
         </nav>
         <div class="hero__content flex flex-col justify-center items-center gap-4 mt-8 sm:items-start sm:justify-end sm:mt-24">
@@ -325,6 +350,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/sidenav.js"></script>
     <script src="scripts/accordion.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="scripts/carousel.js"></script>
