@@ -63,10 +63,6 @@
                 <h1 class="w-full flex items-center sm:w-full">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
                 <p class="w-full flex items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic architecto nostrum consequatur! Dicta error ipsam perferendis quos hic nostrum?</p>    
             </div>
-    
-            <div class="w-91prcnt sm:w-full">
-                <button class="button bg-bcr-limegreen self-start" type="button">Mulai Sewa Mobil</button>
-            </div>    
         </div>
         <div class="hero__img-container mt-6 flex justify-center items-end sm:w-half sm:mt-24 sm:self-end">
             <div class="hero__img-bg bg-bcr-blue flex justify-center">
@@ -97,30 +93,40 @@
                 <label for="seats">Jumlah Penumpang (optional)</label>
                 <select name="seats" id="seats">
                     <option value="" disabled selected hidden>Jumlah Penumpang</option>
-                    <option value="small">1-4 Orang</option>
+                    <option value="coupe">1-2</option>
+                    <option value="small">2-4 Orang</option>
                     <option value="medium">4-6 Orang</option>
                     <option value="large">6+ Orang</option>
                 </select>
-
             </div>
             <div class="flex align-middle">
-                <button class="button">Cari Mobil</button>
+                <button class="button bg-bcr-limegreen">Cari Mobil</button>
             </div>    
         </form>
     </section>
 
     <section class="result w-full flex justify-center">
-        <div class="w-91prcnt grid grid-cols-2 auto-rows-min md:grid-cols-3 sm:w-81prcnt">
-            <div class="flex flex-col">
+        <div class="w-91prcnt grid grid-cols-2 auto-rows-min md:grid-cols-3 lg:grid-cols-4 sm:w-81prcnt">
+            <div class="flex flex-col justify-between p-6 border-2 gap-4">
                 <div class="image flex justify-center">
                     <img src="images/car07.min.jpg" alt="" class="object-cover w-44 h-44 sm:w-52 sm:h-52 lg:w-64 lg:h-64">
                 </div>
-                <div class="type">Audi R8 Type 4s</div>
-                <div class="price">Rp 4,200,000 / hari</div>
-                <div class="descs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, nemo.</div>
-                <div class="seats">2 Orang</div>
-                <div class="trans">Automatic</div>
-                <div class="year">Tahun 2018</div>
+                <p class="type">Audi R8 Type 4s</p>
+                <p class="price font-semibold">Rp 4,200,000 / hari</p>
+                <p class="descs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, nemo.</p>
+                <div class="seats flex gap-4">
+                    <div class="icon--20px user-icon svg bg-bcr-dark"></div>
+                    <p>2 Orang</p>
+                </div>
+                <div class="trans flex gap-4">
+                    <div class="icon--20px gear-icon svg bg-bcr-dark"></div>
+                    <p>Manual</p>
+                </div>
+                <div class="year flex gap-4">
+                    <div class="icon--20px cal-icon svg bg-bcr-dark"></div>
+                    <p>Tahun 2018</p>
+                </div>
+                <button class="button flex justify-center bg-bcr-limegreen">Pilih Mobil</button>
             </div>
         </div>
     </section>
